@@ -9,3 +9,15 @@ date,type,distance,time,elev,start,notes
 2017-06-22,run,1.9,00:16:08,11,07:49,daycare to Bainbridge Street
 2017-08-26,bike,36.4,2:26:32,,08:30,Shorefire Century
 2017-07-08,bike,30,2:00:00,200,09:00,home to Northwestern Ave on Forbidden Drive
+2017-09-04,bike,18.98,1:22:49,585,06:54,"MLK, Belmont Plateau, Strawberry Mansion"
+2017-09-05,run,1.8,00:14:34,14,15:07,Broad Street north
+2017-09-08,run,1.9,00:17:29,11,17:20,13th Street north
+2017-09-13,run,2.6,00:23:52,0,18:36,Broad Street south
+2017-09-19,run,2.3,00:21:22,13,17:09,Broad Street north
+2017-10-04,run,2.2,00:20:46,13,16:57,Broad Street north
+2017-10-15,bike,21,01:40:01,721,10:49,Manayunk Bridge
+2017-10-22,bike,14.6,01:09:00,143,10:10,Delaware Ave
+2017-10-19,run,2.1,00:21:00,143,17:12,13th Street north
+2017-12-04,run,2.16,00:19:14,0,07:55,Broad Street north
+2017-11-28,run,3.07,00:28:44,0,14:00,Broad Street north
+2017-11-26,run,3.9,00:35:40,39,13:52,to Washington Street pier
