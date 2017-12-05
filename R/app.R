@@ -6,8 +6,12 @@ library(ggplot2)
 library(tidyr)
 library(forcats) 
 library(stringr)
+library(rprojroot)
 
-source('../common/jtc_theme.R')
+root <- find_rstudio_root_file()
+
+source(file.path(root, 'common/jtc_theme.R'))
+
 
 # ----- functions and ref data
 
@@ -31,13 +35,14 @@ calc_pace <- function(dist, time) {
 
 # ----- read data -----
 
-cardio <- read_csv('../data/bike_run_log.csv')
+cardio <- read_csv(file.path(root, 'data/bike_run_log.csv'),
+                   col_types = "Dcncncc")
 
 
 # ---- tidy and transform ---
 # create a pace variable
-
 cardio$pace <- calc_pace(cardio$distance, cardio$time)
+
 
 # ----- shiny -----
 
@@ -69,6 +74,7 @@ server <- function(input, output) {
       
       plot <- ggplot(cardio, aes(x = date)) +
         geom_histogram(binwidth = 7) +
+        scale_x_date() +
         labs(x = "week") + 
         jtc
       
@@ -85,7 +91,6 @@ server <- function(input, output) {
     
   })
 }
-
 
 # Run the application 
 shinyApp(ui = ui, server = server)
